@@ -1,6 +1,8 @@
 import React from 'react';
 import quotes from '../../db/quotes';
 
+import Pdf from "../../assets/cadernetaPredial.pdf";
+
 export default function QuoteAndcharacter(props) {
   const { quote, generateRandomQuote } = props;
   return (
@@ -39,6 +41,11 @@ export default function QuoteAndcharacter(props) {
           <i className='fab fa-twitter'></i>
         </button>
       </a>
+      <a href={Pdf} without rel="noopener noreferrer" target="_blank">
+            <button trailingIcon="picture_as_pdf" label="Resume">
+              PDF
+            </button>
+          </a>
     </div>
   );
 }
